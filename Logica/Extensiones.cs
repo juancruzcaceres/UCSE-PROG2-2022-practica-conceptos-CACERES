@@ -9,10 +9,10 @@ namespace Logica
 {
     public static class Extensiones
     {
-        public static int CantidadPalabras(this string s)
+        public static int CantidadPalabras(this string s) //nombrar mejor la variable
         {
             string[] palabras = s.Split(' ');
-            return palabras.Length;
+            return palabras.Length; // podria tener el return en 1 sola linea
         }
 
         public static int CantidadPalabras(this string s, char separador)
@@ -24,10 +24,10 @@ namespace Logica
         public static decimal DiferenciaFechas(DateTime fecha1, DateTime fecha2)
         {
             decimal segundos = (decimal)(fecha1 - fecha2).TotalSeconds;
-            return segundos / 60;
+            return segundos / 60; // podria tener el return en 1 sola linea
         }
 
-        public static double PromedioLista(this List<int> listaInt)
+        public static double PromedioLista(this List<int> listaInt) //no hace falta el "Int" en el nombre
         {
             return listaInt.Average();
         }
@@ -40,7 +40,7 @@ namespace Logica
             return suma * resta;
         }
 
-        public static DateTime ConvertirFecha(this string s)
+        public static DateTime ConvertirFecha(this string s) // nombrar mejor
         {
             try
             {

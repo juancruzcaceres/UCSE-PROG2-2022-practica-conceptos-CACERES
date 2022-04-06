@@ -11,12 +11,12 @@ namespace Logica
 
         public static double ConvertirEnFarenheit(double gradosCelsius)
         {
-            return gradosCelsius * 2.12;
+            return gradosCelsius * 2.12; //podria ser una constante
         }
 
         public static double ConvertirEnCelsius(double gradosFarenheit)
         {
-            return gradosFarenheit / 2.12;
+            return gradosFarenheit / 2.12; //podria ser una constante
         }
     }
 }
